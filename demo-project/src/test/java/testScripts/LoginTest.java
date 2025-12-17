@@ -18,6 +18,7 @@ public class LoginTest extends Base{
 			password.sendKeys(passwordvalue);
 		WebElement submit=driver.findElement(By.xpath("//button[@type='submit']"));
 			submit.click();
+			System.out.println("submit");
 		
 			String nav=driver.getCurrentUrl();
 			Assert.assertEquals(nav, "https://groceryapp.uniqassosiates.com/admin");
