@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-17T07:18:23 GMT" name="Default suite" finished-at="2025-12-17T07:18:29 GMT" duration-ms="6187">
+    <groups>
+    </groups>
+    <test started-at="2025-12-17T07:18:23 GMT" name="Default test" finished-at="2025-12-17T07:18:29 GMT" duration-ms="6187">
+      <class name="testScripts.LoginTest">
+        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testScripts.LoginTest@74f0ea28]" started-at="2025-12-17T07:18:23 GMT" name="browserInitialization" finished-at="2025-12-17T07:18:27 GMT" duration-ms="4460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="LoginWithCorrectCredentails()[pri:1, instance:testScripts.LoginTest@74f0ea28]" started-at="2025-12-17T07:18:27 GMT" name="LoginWithCorrectCredentails" finished-at="2025-12-17T07:18:29 GMT" duration-ms="1677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithCorrectCredentails -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testScripts.LoginTest@74f0ea28]" started-at="2025-12-17T07:18:29 GMT" name="browserClose" finished-at="2025-12-17T07:18:29 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testScripts.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
