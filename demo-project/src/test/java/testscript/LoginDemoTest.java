@@ -1,11 +1,11 @@
-package testScripts;
+package testscript;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest extends Base{
+public class LoginDemoTest extends Base{
 
 	@Test (priority=1)
 	void LoginWithCorrectCredentails()
@@ -16,9 +16,9 @@ public class LoginTest extends Base{
 			username.sendKeys(usernamevalue);
 		WebElement password=driver.findElement(By.xpath("//input[@name='password']"));
 			password.sendKeys(passwordvalue);
-		WebElement submit=driver.findElement(By.xpath("//button[@type='submit']"));
-			submit.click();
-			System.out.println("submit3");
+		WebElement signin=driver.findElement(By.xpath("//button[@type='submit']"));
+			signin.click();
+			System.out.println("submit22");
 		
 			String nav=driver.getCurrentUrl();
 			Assert.assertEquals(nav, "https://groceryapp.uniqassosiates.com/admin");
@@ -35,8 +35,8 @@ public class LoginTest extends Base{
 			username.sendKeys(usernamevalue);
 		WebElement password=driver.findElement(By.xpath("//input[@name='password']"));
 			password.sendKeys(passwordvalue);
-		WebElement submit=driver.findElement(By.xpath("//button[@type='submit']"));
-			submit.click();
+		WebElement signin=driver.findElement(By.xpath("//button[@type='submit']"));
+		signin.click();
 	}
 	@Test(priority=3)
 	void LoginIncorrectUsername()
@@ -47,8 +47,8 @@ public class LoginTest extends Base{
 			username.sendKeys(usernamevalue);
 		WebElement password=driver.findElement(By.xpath("//input[@name='password']"));
 			password.sendKeys(passwordvalue);
-		WebElement submit=driver.findElement(By.xpath("//button[@type='submit']"));
-			submit.click();
+		WebElement signin=driver.findElement(By.xpath("//button[@type='submit']"));
+		signin.click();
 	}
 	@Test(priority=4)
 	void LogininIncorrectUsernamepwd()
@@ -59,8 +59,8 @@ public class LoginTest extends Base{
 			username.sendKeys(usernamevalue);
 		WebElement password=driver.findElement(By.xpath("//input[@name='password']"));
 			password.sendKeys(passwordvalue);
-		WebElement submit=driver.findElement(By.xpath("//button[@type='submit']"));
-			submit.click();
+		WebElement signin=driver.findElement(By.xpath("//button[@type='submit']"));
+		signin.click();
 	}
 	
 }
