@@ -16,11 +16,11 @@ public class LoginPage {
 		@FindBy(xpath="//input[@name='password']")WebElement password;
 		@FindBy(xpath="//button[@type='submit']")WebElement submit;
 		@FindBy(xpath="//p[text()='Dashboard']")WebElement dashboard;
-		@FindBy(xpath="//div[contains(@class,'alert alert-danger alert-dismissible')]")WebElement alert;
+		@FindBy(xpath="//div[contains(@class,'alert-dismissible')]")WebElement alert;   //  //div[contains(@class,'alert alert-danger alert-dismissible')]
 public LoginPage(WebDriver driver) {
 		this.driver=driver; //assign current class driver to global driver
 		PageFactory.initElements(driver, this);  //static method ,hence called classname.method <2 para, local driver, current class instance driver
-		//to initialise webelements we use initElements.
+		//to initialize webelements we use initElements.
 		}
 public void enterTheUsername(String user)
 {

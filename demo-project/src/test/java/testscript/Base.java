@@ -21,7 +21,7 @@ public class Base {
 	@AfterMethod
 	public void browserClose()   {
 	//	driver.close(); //closes only the current page
-	//	driver.quit();//closes all the pages in the window   - use quit
+	driver.quit();//closes all the pages in the window   - use quit
 	}
 		
 	//public static void main(String[] args) {
