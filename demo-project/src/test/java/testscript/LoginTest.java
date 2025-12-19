@@ -1,5 +1,6 @@
 package testscript;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
@@ -10,10 +11,12 @@ public class LoginTest extends Base {
 	{
 		String user="admin"; //webelement, method in page class
 		String passwd="admin";
-		LoginPage loginpage=new LoginPage(driver);  //pass value from test class to page class
+		LoginPage loginpage=new LoginPage(driver);  //pass value driver 
 		loginpage.enterTheUsername(user);  //calling page methods, passvalue
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue
 		loginpage.signin();
+		boolean dashboardpage=loginpage.isHomePageDisplayed();
+		Assert.assertTrue(dashboardpage);  //hard assertion , classname.methodname
 	}
 	@Test(priority=2)
 	public void verifylogininvalidpassword()
@@ -24,6 +27,9 @@ public class LoginTest extends Base {
 		loginpage.enterTheUsername(user);  //calling page methods, passvalue
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue
 		loginpage.signin();
+		
+		boolean alertpage=loginpage.isAlertDisplayed();
+		Assert.assertTrue(alertpage); //hard assertion , classname.methodname
 	}
 	@Test(priority=3)
 	public void verifylogininvalidusername()
@@ -34,6 +40,8 @@ public class LoginTest extends Base {
 		loginpage.enterTheUsername(user);  //calling page methods, passvalue
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue
 		loginpage.signin();
+		boolean alertpage=loginpage.isAlertDisplayed();
+		Assert.assertTrue(alertpage); //hard assertion , classname.methodname
 	}
 	@Test(priority=4)
 	public void verifylogininvalidusernamepwd()
@@ -44,5 +52,7 @@ public class LoginTest extends Base {
 		loginpage.enterTheUsername(user);  //calling page methods, passvalue
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue
 		loginpage.signin();
+		boolean alertpage=loginpage.isAlertDisplayed();
+		Assert.assertTrue(alertpage); //hard assertion , classname.methodname
 	}
 }
