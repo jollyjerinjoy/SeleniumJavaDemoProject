@@ -5,7 +5,7 @@
     <classes>
       <class name="testscript.LoginTest">
         <methods>
-          <include name="verifylogininvalidusernamepwd"/>
+          <include name="verifylogininvalidpassword"/>
           <include name="browserClose"/>
           <include name="browserInitialization"/>
         </methods>
