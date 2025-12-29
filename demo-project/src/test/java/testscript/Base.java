@@ -12,7 +12,7 @@ import com.beust.jcommander.Parameter;
 
 public class Base {
 	public WebDriver driver; //declaring globally so that every methods can use this
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")  //Parameterization for multiple browser
 	public void browserInitialization(String browser) throws Exception {
 		if(browser.equalsIgnoreCase("chrome"))
@@ -41,7 +41,7 @@ public class Base {
 		//driver.close();
 		//driver.quit();
 		}
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void browserClose()   {
 	//	driver.close(); //closes only the current page
 	driver.quit();//closes all the pages in the window   - use quit

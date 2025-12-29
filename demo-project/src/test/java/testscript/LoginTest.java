@@ -9,7 +9,7 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
-	@Test(priority=1)
+	@Test(priority=1,groups= {"regression"},retryAnalyzer=retry.Retry.class)
 	public void verifyloginwithvalidcredentails() throws IOException
 	{
 	//	String user="admin"; //webelement, method in page class
@@ -40,7 +40,7 @@ public class LoginTest extends Base {
 		boolean alertpage=loginpage.isAlertDisplayed();
 		Assert.assertTrue(alertpage); //hard assertion , classname.methodname
 	}
-	@Test(priority=3)
+	@Test(priority=3,retryAnalyzer=retry.Retry.class)
 	public void verifylogininvalidusername() throws IOException
 	{
 		//String user="admin243546"; //webelement, method in page class
@@ -55,7 +55,7 @@ public class LoginTest extends Base {
 		boolean alertpage=loginpage.isAlertDisplayed();
 		Assert.assertTrue(alertpage); //hard assertion , classname.methodname
 	}
-	@Test(priority=4)
+	@Test(priority=4,retryAnalyzer=retry.Retry.class)
 	public void verifylogininvalidusernamepwd() throws IOException
 	{
 		String user=ExcelUtility.readStringData(4, 0, "LoginPage");

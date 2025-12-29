@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-CrossBrowserTest" class="navigator-link ">
-                    <span>C:\Users\jkann\git\SeleniumJavaDemoProject\demo-project\crossbrowsertesting.xml</span>
+                    <span>C:\Users\jkann\git\SeleniumJavaDemoProject\demo-project\testngretry.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -172,7 +172,7 @@
         </div> <!-- panel CrossBrowserTest -->
         <div panel-name="test-xml-CrossBrowserTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jkann\git\SeleniumJavaDemoProject\demo-project\crossbrowsertesting.xml</span>
+            <span class="header-content">C:\Users\jkann\git\SeleniumJavaDemoProject\demo-project\testngretry.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,7 +193,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testscript.LoginTest&quot;&gt;
-        &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+        &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
         &lt;methods&gt;
           &lt;exclude name=&quot;verifyloginwithvalidcredentails&quot;/&gt;
           &lt;exclude name=&quot;verifylogininvalidpassword&quot;/&gt;
@@ -245,24 +245,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifylogininvalidusername')
 data.setCell(0, 2, 'testscript.LoginTest')
-data.setCell(0, 3, 2003);
+data.setCell(0, 3, 3483);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifylogininvalidusernamepwd')
 data.setCell(1, 2, 'testscript.LoginTest')
-data.setCell(1, 3, 784);
+data.setCell(1, 3, 1430);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifylogininvalidusername')
+data.setCell(2, 1, 'verifylogininvalidusernamepwd')
 data.setCell(2, 2, 'testscript.LoginTest')
-data.setCell(2, 3, 736);
+data.setCell(2, 3, 1252);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifylogininvalidusernamepwd')
+data.setCell(3, 1, 'verifylogininvalidusername')
 data.setCell(3, 2, 'testscript.LoginTest')
-data.setCell(3, 3, 666);
+data.setCell(3, 3, 732);
 window.suiteTableData['CrossBrowserTest']= { tableData: data, tableDiv: 'times-div-CrossBrowserTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-CrossBrowserTest">
               </div> <!-- times-div-CrossBrowserTest -->
             </div> <!-- times-div -->
@@ -308,47 +308,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogininvalidusername</span>
-                <span class="method-start">3546 ms</span>
+                <span class="method-start">5357 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">5556 ms</span>
+                <span class="method-start">8849 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization(chrome)</span>
-                <span class="method-start">5778 ms</span>
+                <span class="method-start">9132 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogininvalidusernamepwd</span>
-                <span class="method-start">8779 ms</span>
+                <span class="method-start">13505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">9565 ms</span>
+                <span class="method-start">14938 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(edge)</span>
-                <span class="method-start">9798 ms</span>
+                <span class="method-name">browserInitialization(firefox)</span>
+                <span class="method-start">15208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogininvalidusername</span>
-                <span class="method-start">15366 ms</span>
+                <span class="method-start">21990 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">16104 ms</span>
+                <span class="method-start">22725 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(edge)</span>
-                <span class="method-start">16333 ms</span>
+                <span class="method-name">browserInitialization(firefox)</span>
+                <span class="method-start">24127 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogininvalidusernamepwd</span>
-                <span class="method-start">19420 ms</span>
+                <span class="method-start">30241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">20087 ms</span>
+                <span class="method-start">31500 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

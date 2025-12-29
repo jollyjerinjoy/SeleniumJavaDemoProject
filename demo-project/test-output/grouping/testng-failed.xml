@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [CrossBrowserTest]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Chrometest(failed)">
+<suite parallel="methods" name="Failed suite [Grouping]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Chrometest(failed)">
     <classes>
       <class name="testscript.LoginTest">
         <parameter name="browser" value="chrome"/>
         <methods>
-          <include name="verifylogininvalidusername"/>
-          <include name="browserClose"/>
+          <include name="verifyloginwithvalidcredentails"/>
           <include name="browserInitialization"/>
+          <include name="browserClose"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
     </classes>
   </test> <!-- Chrometest(failed) -->
-</suite> <!-- Failed suite [CrossBrowserTest] -->
+</suite> <!-- Failed suite [Grouping] -->
